@@ -1,0 +1,36 @@
+<odoo>
+    <!-- List View -->
+    <record id="view_persons_list" model="ir.ui.view">
+        <field name="name">persons.list</field>
+        <field name="model">persons</field>
+        <field name="arch" type="xml">
+            <tree string="Persons">
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="full_name"/>
+                <field name="age"/>
+                <field name="sex"/>
+                <field name="company_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_persons_form" model="ir.ui.view">
+        <field name="name">persons.form</field>
+        <field name="model">persons</field>
+        <field name="arch" type="xml">
+            <form string="Person">
+                <group>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                    <field name="full_name" readonly="1"/>
+                    <field name="birthday"/>
+                    <field name="age" readonly="1"/>
+                    <field name="sex"/>
+                    <field name="company_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
