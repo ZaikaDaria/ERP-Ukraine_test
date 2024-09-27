@@ -1,7 +1,4 @@
 <odoo>
-    <!-- Головне меню для моделі Persons -->
-    <menuitem id="menu_persons_root" name="Persons" sequence="10"/>
-
-    <!-- Підменю для відображення списку осіб -->
-    <menuitem id="menu_persons_list" name="Persons List" parent="menu_persons_root" action="action_persons_list" sequence="10"/>
+    <menuitem id="menu_persons_root" name="Persons"/>
+    <menuitem id="menu_persons_list" name="Persons List" parent="menu_persons_root" action="action_persons"/>
 </odoo>

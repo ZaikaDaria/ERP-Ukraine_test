@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_persons" model="ir.actions.act_window">
+        <field name="name">Persons</field>
+        <field name="res_model">persons</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
